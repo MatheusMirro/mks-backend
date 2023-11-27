@@ -1,73 +1,61 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Movie Catalog API
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a RESTful API built using TypeScript, Nest.js, TypeORM, Swagger, Docker, Redis, and PostgreSQL. The main objective is to develop a JWT authentication system and manage a catalog of movies.
 
 ## Installation
 
-```bash
-$ npm install
-```
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Configure Redis if applicable.
+4. Run `npm run start:dev` to start the development server.
 
-## Running the app
+## Viewing All Routes
 
-```bash
-# development
-$ npm run start
+To view all available routes and endpoints, access the Swagger documentation. If running the application locally, navigate to:
 
-# watch mode
-$ npm run start:dev
+http://localhost:5000/api
 
-# production mode
-$ npm run start:prod
-```
+Replace `5000` with the port where your Nest.js application is running.
 
-## Test
+If your application is hosted on a server, use the corresponding domain name or IP address followed by `/api`.
 
-```bash
-# unit tests
-$ npm run test
+This `/api` path is the default defined by Swagger in Nest.js configuration, but it might vary if you've customized the Swagger path manually.
 
-# e2e tests
-$ npm run test:e2e
+## Features
 
-# test coverage
-$ npm run test:cov
-```
+- JWT Authentication
+- CRUD for movie catalog
 
-## Support
+## Project Structure
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- `src/`
+  - `auth/`: Contains authentication logic (controllers, services, strategies).
+  - `users/`: Logic related to users (controllers, services, models).
+  - `movies/`: Logic related to movies (controllers, services, models).
+  - Other relevant files and folders in the project.
 
-## Stay in touch
+## Usage
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- `npm run start:dev`: Starts the development server.
+- `npm run test`: Runs automated tests.
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues or pull requests.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the MIT License.
+
+## Experience
+
+With over 3 years of experience in developing Node.js applications, I am constantly engaged in learning and refining my skills to become the best developer I can be. Currently studying Java to expand my skill set.
+
+## 🔗 Links
+
+Any questions? I'm available to answer!
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](matheusalves.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-alves96/)
