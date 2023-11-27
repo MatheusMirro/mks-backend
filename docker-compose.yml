@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  database:
+    image: postgres
+    container_name: mks-books-database
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=mks-movies-database
+    volumes:
+      - /var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mks-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    environment:
+      - SALT_ROUNDS=10
+      - JWT_SECRET=2e3k2d6r#3
+      - MY_TOKEN=pSSIGuvAYphO3UvPfKhcaR6m0pGvdp7U
